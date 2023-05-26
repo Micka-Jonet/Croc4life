@@ -1,0 +1,16 @@
+.navbarContainer {
+    border-bottom: 1px solid var(--firstColor);
+}
+
+.navbar-title {
+    color: var(--firstColor) !important;
+    margin-right: 5% !important;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--firstColor) !important;
+}
