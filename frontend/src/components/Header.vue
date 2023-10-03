@@ -20,6 +20,22 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
+                        <li>
+                            <a 
+                                href="https://www.facebook.com/profile.php?id=100093278883761"
+                                target="_blank"
+                                class="nav-link">
+                                <i class="btn-rx bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://www.instagram.com/croc4life_dietetique_chienchat/" 
+                                target="_blank"
+                                class="nav-link">
+                                <i class="btn-rx bi bi-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
                     <button @mouseover="appointmentError()" @mouseout="outError()" class="btn btn-outline-success" type="submit">{{ btnData }}</button>
                 </div>
@@ -34,12 +50,12 @@ export default {
     name: Headers,
     data() {
         return {
-            btnData: 'Prenez rendez-vous',
+            btnData: 'Prendre rendez-vous',
         }
     },
     methods: {
         appointmentError() {
-            this.btnData = 'Indisponible, nous contacter';
+            this.btnData = 'Indisponible, contactez-nous';
         },
         outError() {
             this.btnData = 'Prenez rendez-vous';
@@ -63,11 +79,15 @@ export default {
 .nav-link {
     font-family: $nav-font;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0 0 0 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    // transition: .4s;
+    animation-duration: 1s;
+}
+
+.btn-rx {
+    font-size: 1rem;
 }
 
 .nav-link:hover {
