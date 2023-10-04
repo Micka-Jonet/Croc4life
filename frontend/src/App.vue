@@ -1,17 +1,20 @@
 <template>
   <Header/>
   <Presentation/>
+  <Questions/>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Presentation from './components/Presentation.vue'
+import Questions from './components/Questions.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Presentation,
+    Questions,
   }
 }
 </script>
@@ -29,6 +32,7 @@ export default {
 
   .container-default {
     width: 1080px;
+    margin: 0 auto;
   }
 
   h2 {
